@@ -75,10 +75,7 @@ f.close()
 #rename txt to plist
 configFileName = "ChromeProfile_v" + str(version) + ".txt"
 newConfigFileName = "ChromeProfile_v" + str(version) + ".plist"
-print(configFileName)
-print(newConfigFileName)
 for filename in os.listdir(dirPath):
-    print(filename)
     if filename.startswith(configFileName):
         os.rename(dirPath + "/" + filename, dirPath + "/" + newConfigFileName)
 

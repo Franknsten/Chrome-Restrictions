@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 import csv
 import pyperclip
+import os
+
+#Get cwd
+realPath = os.path.realpath(__file__)
+dirPath = os.path.dirname(realPath)
+#list to store extensions in
 allIDs = []
 #Get names and ID's of extensions from file
-with open('extensionIDs.csv', 'rt') as f:
+with open(dirPath + '/extensionIDs.csv', 'rt') as f:
     reader = csv.reader(f)
     for row in reader:
         if not row[0] == "Name":
