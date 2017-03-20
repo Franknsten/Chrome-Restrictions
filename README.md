@@ -17,7 +17,7 @@ Once the profile is pushed out, it takes effect almost instantly, removing non-a
 
 ## How To Use
 - #### Running The Script
-  1. Run `generatePLIST.py`, either via command line (`python generatePLIST.py`) or through IDLE (`F5`)
+  1. Run `generatePLIST.py`, either via command line (`python3 generatePLIST.py`) or through IDLE (`F5`)
   2. When prompted with `Enter Name: `, enter the name of the extension. This is **solely** for your reference, so you can name them however you like
   3. When prompted with `Enter ID: `, you must enter the extenion ID **exactly** as it appears in the URL
   <br />
