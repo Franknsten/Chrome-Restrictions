@@ -7,6 +7,7 @@ Once the profile is pushed out, it takes effect almost instantly, removing non-a
 - If you are having troubles caused by students installing extensions, be it network or engagement based
 - If you manage a fleet of iOS or OSX devices
 - If you want greater control over what your students can install
+
  Then this is for you.
 
 ## Requirements
