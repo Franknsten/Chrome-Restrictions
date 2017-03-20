@@ -49,4 +49,5 @@ Once the profile is pushed out, it takes effect almost instantly, removing non-a
 
 ## Acknowledgements
 JAMF Nation user Merkley for his answer in regards to how to do block extensions
+
 Developer/s behind pyperclip
