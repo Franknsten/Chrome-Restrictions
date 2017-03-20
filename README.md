@@ -44,7 +44,7 @@ Once the profile is pushed out, it takes effect almost instantly, removing non-a
 - #### Inform Users
   1. If you want to provide staff/students with a list of the allowed extensions, running `generateList.py` will copy a HTML unordered list to your clipboard, ready to be pasted into a document or a HTML compatible message
   2. The list items will display with the name of the extension you entered, and will link to the URL using the ID
-    - `&lt;li>&lt;a href="https://chrome.google.com/webstore/detail/extensionID" >Extension Name &lt;/a>&lt;/li>`
+    - `<li><a href="https://chrome.google.com/webstore/detail/extensionID" >Extension Name </a></li>`
   3. These are pulled from `extentionIDs.csv`, so it is important that you enter the data correctly
 
 ## Acknowledgements
