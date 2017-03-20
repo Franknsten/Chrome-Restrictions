@@ -15,7 +15,7 @@ Once the profile is pushed out, it takes effect almost instantly, removing non-a
 + You must be using [JAMF](https://www.jamf.com/) software, specifically the JSS To manage your machines
 
 ## How To Use
-1. #### Running The Script
+- #### Running The Script
   1. Run `generatePLIST.py`, either via command line (`python generatePLIST.py`) or through IDLE (`F5`)
   2. When prompted with `Enter Name: `, enter the name of the extension. This is **solely** for your reference, so you can name them however you like
   3. When prompted with `Enter ID: `, you must enter the extenion ID **exactly** as it appears in the URL
@@ -28,7 +28,7 @@ Once the profile is pushed out, it takes effect almost instantly, removing non-a
 
   **NOTE** - You only need to do this to ADD extensions in. `extentionIDs.csv` stores all of the ones you have entered, and you can use this to see what is and isn't allowed to be installed
 
-2. #### Uploading to JSS
+- #### Uploading to JSS
   1. Browse to https://your.jss.address:port/OSXConfigurationProfiles.html
   2. Create a new configuration profile<br />
   ![New config profile](https://github.com/Franknsten/Chrome-Restrictions/blob/master/images/newConfigProfile.png)<br />
@@ -40,7 +40,7 @@ Once the profile is pushed out, it takes effect almost instantly, removing non-a
   6. In the `Scope` tab, add the machines you want to be impacted by this profile
   7. Save
 
-3. #### Inform Users
+- #### Inform Users
   1. If you want to provide staff/students with a list of the allowed extensions, running `generateList.py` will copy a HTML unordered list to your clipboard, ready to be pasted into a document or a HTML compatible message
   2. The list items will display with the name of the extension you entered, and will link to the URL using the ID
     - &lt;li>&lt;a href="https://chrome.google.com/webstore/detail/extensionID" >Extension Name &lt;/a>&lt;/li>
