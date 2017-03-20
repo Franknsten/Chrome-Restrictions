@@ -48,3 +48,5 @@ Once the profile is pushed out, it takes effect almost instantly, removing non-a
   3. These are pulled from `extentionIDs.csv`, so it is important that you enter the data correctly
 
 ## Acknowledgements
+JAMF Nation user Merkley for his answer in regards to how to do block extensions
+Developer/s behind pyperclip
