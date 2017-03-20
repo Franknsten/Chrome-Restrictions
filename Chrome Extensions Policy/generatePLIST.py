@@ -22,9 +22,12 @@ nextLine = ''
 allIDs = []
 #config version
 version = ''
+#Get cwd
+realPath = os.path.realpath(__file__)
+dirPath = os.path.dirname(realPath)
 
 #read in list of OLD IDs from file "oldIDs.csv"
-with open('extensionIDs.csv', 'rt') as f:
+with open(dirPath + '/extensionIDs.csv', 'rt') as f:
     reader = csv.reader(f)
     for row in reader:
         if not row[0] == "Name":
@@ -59,7 +62,7 @@ last = '''
                                 '''
 
 #write to file
-f = open("ChromeProfile_v" + str(version) + ".txt", "w")
+f = open(dirPath + "/ChromeProfile_v" + str(version) + ".txt", "w")
 f.write(first)
 for currID in allIDs:
     if not currID[1] == 'ID':
@@ -70,15 +73,18 @@ f.write(last)
 f.close()
 
 #rename txt to plist
-configFileName = "bseChromeProfile_v" + str(version) + ".txt"
-newConfigFileName = "bseChromeProfile_v" + str(version) + ".plist"
-for filename in os.listdir("."):
+configFileName = "ChromeProfile_v" + str(version) + ".txt"
+newConfigFileName = "ChromeProfile_v" + str(version) + ".plist"
+print(configFileName)
+print(newConfigFileName)
+for filename in os.listdir(dirPath):
+    print(filename)
     if filename.startswith(configFileName):
-        os.rename(filename, newConfigFileName)
+        os.rename(dirPath + "/" + filename, dirPath + "/" + newConfigFileName)
 
 
 #write IDs to file 
-with open("extensionIDs.csv", "wt") as file:
+with open(dirPath + '/extensionIDs.csv', "wt") as file:
     writer = csv.writer(file, quoting=csv.QUOTE_ALL)
     writer.writerow(["Name","ID", version])
     for currID in allIDs:
